@@ -25,8 +25,6 @@
 %%
 function [DL_field, Ref_best_fit, Coarse_best_fit] = mixed_CDF_downscale_field_temp(Ref_field,Ref_lat,Ref_lon,Coarse_field,Coarse_lat,Coarse_lon,CS_to_DL_field,pup,pl)
 
-CS_to_DL_field = round(CS_to_DL_field,3);
-
 tic
 % %first check that extent satisfies requirements
 % if(max(Ref_lat(:))>max(Coarse_lat(:)) || max(Ref_lon(:))>max(Coarse_lon(:)) || min(Ref_lat(:))<min(Coarse_lat(:)) || min(Ref_lon(:))<min(Coarse_lon(:)))
