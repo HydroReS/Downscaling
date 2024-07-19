@@ -25,8 +25,6 @@
 %%
 function [DL_field, Ref_best_fit, Ref_p0, Coarse_best_fit, Coarse_p0 ] = mixed_CDF_downscale_field(Ref_field,Ref_lat,Ref_lon,Coarse_field,Coarse_lat,Coarse_lon,CS_to_DL_field,pup,norain)
 
-CS_to_DL_field = round(CS_to_DL_field,3);
-
 tic
 
 if(size(Coarse_field,1)~=size(CS_to_DL_field,1) || size(Coarse_field,2)~=size(CS_to_DL_field,2))
